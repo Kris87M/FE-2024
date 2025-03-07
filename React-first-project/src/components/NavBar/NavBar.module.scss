@@ -1,0 +1,50 @@
+@import '../../styles/settings.scss';
+
+nav {
+    background-color: darken($color-dark, 3%);
+    padding: 8px;
+    height: auto;
+}
+
+.navContainer {
+    margin: 0;
+    max-width: none;
+    padding: 0 20px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+a {
+    color: $color-light;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+span {
+    padding: 8px;
+}
+
+.navlist {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navlink {
+    padding: 0 16px;
+    a {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+.linkActive {
+    color: $color-warning;
+}
