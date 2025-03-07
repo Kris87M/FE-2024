@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+//Variables
+$font-gold: "Pacifico", cursive;
+$color-one: gold;
+$color-two: black;
+$color-three: white;
+$color-four: grey;
+$color-five: lightgrey;
+
+//Global
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+//Main
+
+.main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+//Main - navigation
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.brand {
+    color: $color-one;
+    font-family: $font-gold;
+}
+.navigation a {
+    text-decoration: none;
+    color: $color-three;
+}
+
+.navigation a:hover {
+    color: $color-one;
+}
+
+.list {
+    list-style-type: none;
+}
+.item {
+    display: inline-block;
+    padding: 10px 20px;
+}
+.nav-item {
+    text-transform: uppercase;
+}
+
+//Main-title
+
+.main-title {
+    line-height: 1.7;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-three;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    color: $color-four;
+}
+.btn {
+    display: inline-block;
+    min-width: 200px;
+    background-color: $color-one;
+    text-decoration: none;
+    font-weight: 800;
+    color: $color-three;
+    margin: 20px auto 0 auto;
+    padding: 20px;
+    border: 2px solid $color-two;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.btn:hover {
+    scale: 1.2;
+}
+//Services
+.services {
+    padding: 20px;
+}
+.container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 0;
+}
+
+.sub-title {
+    margin-bottom: 48px;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 0 0 30%;
+    position: relative;
+}
+
+.fa-solid {
+    font-size: 36px;
+    height: 70px;
+    width: 70px;
+    padding-top: 10px;
+    color: $color-one;
+    border: 5px solid $color-one;
+    border-radius: 50%;
+}
+
+.text {
+    margin: 0;
+}
+
+.p-description {
+    padding: 20px;
+}
+
+//Our portfolio
+.container {
+    padding: 20px 0;
+}
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.our-portfolio {
+    background-color: $color-five;
+}
+
+.p-box {
+    background-color: $color-three;
+    margin: 30px 15px;
+}
+//Footer
+
+.page-footer {
+    display: flex;
+    text-align: center;
+}
+
+.foot-item {
+    font-size: 0;
+    padding: 2px;
+}
+
+.fa-brands, .fab, {
+    font-size: 16px;
+    height: 25px;
+    width: 25px;
+    padding-top: 5px;
+    border-radius: 50%;
+    color: $color-three;
+    background-color: $color-two;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.foot-box i:hover {
+    scale: 1.2;
+}
+
+.foot-box {
+    flex: 0 0 33.333%;
+}
+
+//Media Querries
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+.wrapper {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+.wrapper {
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 24px;
+}
+.navigation {
+    justify-content: center;
+}
+
+.brand, .nav-item {
+    font-size: 12px;
+    padding: 0;
+}
+
+.foot-box {
+    flex: 0 0 50%;
+}
+
+}
